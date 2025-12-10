@@ -1,0 +1,24 @@
+<Solution>
+  <Folder Name="/LLMs/">
+    <Project Path="FunctionCall/FunctionCall.csproj" />
+    <Project Path="TextCompletion/TextCompletion.csproj" />
+    <Project Path="TextCompletionOllama/TextCompletionOllama.csproj" />
+  </Folder>
+  <Folder Name="/RAG/">
+    <Project Path="ChatAppRAG/ChatAppRAG.csproj" />
+    <Project Path="ChatAppRAG_Ollama/ChatAppRAG_Ollama.csproj" />
+    <Project Path="ChatAppRAG_Qdrant/ChatAppRAG_Qdrant.AppHost/ChatAppRAG_Qdrant.AppHost.csproj" />
+    <Project Path="ChatAppRAG_Qdrant/ChatAppRAG_Qdrant.ServiceDefaults/ChatAppRAG_Qdrant.ServiceDefaults.csproj" />
+    <Project Path="ChatAppRAG_Qdrant/ChatAppRAG_Qdrant.Web/ChatAppRAG_Qdrant.Web.csproj" />
+  </Folder>
+  <Folder Name="/Vectors/">
+    <Project Path="Embeddings/Embeddings.csproj" />
+    <Project Path="VectorSearch/VectorSearch.csproj" />
+    <Project Path="VectorSearchOllama/VectorSearchOllama.csproj" />
+  </Folder>
+  <Folder Name="/Vision/">
+    <Project Path="ImageAnalysis/ImageAnalysis.csproj" Id="28e458ff-7549-46d1-b4f4-87fb800f7813" />
+    <Project Path="ImageAnalysisOllama/ImageAnalysisOllama.csproj" Id="f265054f-95cf-4f10-ab99-d8fdc0ef5212" />
+    <Project Path="TraficCamAnalysis/TraficCamAnalysis.csproj" Id="4e4017a1-68a6-496e-8536-aa2ba5048849" />
+  </Folder>
+</Solution>
