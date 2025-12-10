@@ -1,62 +1,107 @@
-# GenAI-Demo
-
-🚀 What You'll Build and Learn
-
-Throughout this course, you will get hands-on experience building a variety of real-world AI applications:
-
-💬 Chat & Text Analysis: Build your first intelligent chatbots, perform complex text analysis (classification, summarization, sentiment analysis), and master prompt engineering to control AI behavior.
-
-🛠️ Function Calling: Give your AI a "superpower" by teaching it to execute your own C# methods to fetch real-time data or perform actions.
-
-🔍 Vector Search & Embeddings: Learn the core of all modern recommendation engines. Turn any text into a numerical vector of its "meaning" and perform powerful semantic searches.
-
-📚 Retrieval-Augmented Generation (RAG): Construct a complete RAG pipeline from scratch. Build an AI that can answer questions based on your own private documents, grounding its responses in facts and eliminating hallucinations.
-
-🖼️ Image Analysis: Go beyond text and give your AI the gift of sight. Build applications that can "see" and interpret the contents of an image, and even extract structured data from what they see, like monitoring traffic cameras.
-
-🏆 Final Project: E-Shop Semantic Search: Put all your skills together to build a complete AI-powered eShop application. You will implement a cutting-edge semantic search feature in a distributed microservices application using .NET Aspire, a Qdrant Vector Database, and models like gpt-4o-mini.
-
-💻 Technology Stack
-We use a modern, powerful, and production-ready tech stack:
-
-.NET 10
-ASP.NET Core (Minimal APIs, Blazor)
-.NET Aspire for orchestration
-OpenAI / GitHub Models (gpt-4o-mini, text-embedding-3-small)
-Ollama (Llama 3.2, LLaVA, all-minilm)
-Qdrant Vector Database
-Microsoft.Extensions.AI Abstractions
-Entity Framework Core & PostgreSQL
-Docker
-📂 Repository Structure
-This repository is organized by section, mirroring the structure of the Udemy course. Each numbered folder represents a self-contained project that we build together.
-
-01-TextCompletionSentiment: Fundamentals of text generation, streaming, structured output, and analysis.
-02-ChatApp: Building an interactive, context-aware chatbot.
-03-FunctionCalling: Enabling the LLM to execute C# code.
-04-VectorSearch: Introduction to embeddings and vector databases.
-05-RAGApplication: Building a complete RAG app with a custom knowledge base.
-06-ImageAnalysis: Multimodal AI with vision models.
-07-EShopVectorSearch: The final capstone project using .NET Aspire and microservices.
-🏁 Getting Started
-Prerequisites
-To run these projects, you will need the following installed on your machine:
-
-.NET 9 SDK (or later)
-Docker Desktop (essential for Ollama and Qdrant)
-An IDE like Visual Studio 2022 or Visual Studio Code (with the C# Dev Kit).
-Configuration
-These projects require API keys to connect to AI services. We use .NET's user-secrets feature to keep these keys safe and out of source control.
-
-1. For OpenAI / GitHub Models:
-
-Navigate to a project directory (e.g., 01-TextCompletionSentiment) in your terminal and run:
 
 
+---
+# **GenAI-Demo**
+
+**GenAI-Demo** is a complete learning and demonstration project showcasing how to build modern Generative AI applications using **.NET**, **Microsoft Extensions for AI (MEAI)**, **Semantic Kernel**, embeddings, RAG, function calling, and image analysis.
+
+This repository walks you step-by-step through building real-world AI features and integrating Large Language Models (LLMs) into production-ready .NET solutions.
+
+---
+
+## 🚀 **What You Will Build & Learn**
+
+### **💬 Chat & Text Intelligence**
+
+Create intelligent chatbots, perform text classification, summarization, and sentiment analysis, and learn practical prompt engineering techniques.
+
+### **🛠️ Function Calling (Tools)**
+
+Teach your AI to execute real C# methods—allowing it to retrieve data, call external services, and perform real actions programmatically.
+
+### **🔍 Vector Search & Embeddings**
+
+Understand how modern semantic search works. Convert text into vector embeddings and build semantic search features powered by vector databases.
+
+### **📚 Retrieval-Augmented Generation (RAG)**
+
+Build a complete RAG pipeline from scratch. Allow your AI to ground answers in your own documents for accurate, fact-based responses.
+
+### **🖼️ Image Understanding**
+
+Implement multimodal capabilities so the AI can analyze images, extract information, generate descriptions, and interpret visual content.
+
+### **🏆 Final Project: Semantic Search**
+
+Bring everything together by building a full semantic search engine for an platform using **.NET Aspire**, **Qdrant**, and models like **gpt-4o-mini**.
+
+---
+
+## 💻 **Technology Stack**
+
+This demo uses a modern and production-ready stack:
+
+* **.NET 10**
+* **ASP.NET Core** (Minimal APIs, Blazor)
+* **.NET Aspire** for service orchestration
+* **OpenAI / GitHub Models** (gpt-4o-mini, text-embedding-3-small)
+* **Ollama** (Llama 3.2, LLaVA, all-minilm locally)
+* **Qdrant** Vector Database
+* **Microsoft.Extensions.AI** Abstractions
+* **Semantic Kernel**
+* **Entity Framework Core + PostgreSQL**
+* **Docker**
+
+---
+
+## 📂 **Repository Structure**
+
+The repository is organized into sections that mirror the learning path. Each folder contains a standalone project:
+
+| Folder                         | Description                                                            |
+| ------------------------------ | ---------------------------------------------------------------------- |
+| **01-TextCompletionSentiment** | Text generation, streaming, structured output, sentiment analysis      |
+| **02-ChatApp**                 | Context-aware chatbot with memory                                      |
+| **03-FunctionCalling**         | LLM executing C# functions                                             |
+| **04-VectorSearch**            | Embeddings, similarity search, vector databases                        |
+| **05-RAGApplication**          | Full Retrieval-Augmented Generation pipeline                           |
+| **06-ImageAnalysis**           | Vision models and multimodal AI                                        |
+
+---
+
+## 🏁 **Getting Started**
+
+### **Prerequisites**
+
+Make sure you have:
+
+* **.NET 10 SDK**
+* **Docker Desktop** (required for Ollama & Qdrant)
+* **Visual Studio 2026** or **VS Code** (with C# Dev Kit)
+
+---
+
+## ⚙️ **Configuration**
+
+These projects use `.NET user-secrets` for secure storage of API keys.
+
+### **1. GitHub Models / OpenAI API Key**
+
+Navigate to any project folder (e.g., `01-TextCompletionSentiment`) and run:
+
+```bash
 dotnet user-secrets init
 dotnet user-secrets set "GitHubModels:Token" "YOUR_GITHUB_PAT_HERE"
+```
 
-For the Project (using .NET Aspire): Configuration is handled by the .AppHost project. Navigate to the EShopVectorSearch.AppHost directory and set the secret there:
+### **2. For .NET Aspire Final Project**
 
+Navigate to the **AppHost** directory and configure the OpenAI/GitHub Models connection:
+
+```bash
 dotnet user-secrets init
 dotnet user-secrets set "ConnectionStrings:openai" "Endpoint=https://models.inference.ai.azure.com;Key=YOUR_GITHUB_PAT_HERE"
+```
+
+---
+
