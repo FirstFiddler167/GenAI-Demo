@@ -1,71 +1,101 @@
-
-
 ---
+
 # **GenAI-Demo**
 
-**GenAI-Demo** is a complete learning and demonstration project showcasing how to build modern Generative AI applications using **.NET**, **Microsoft Extensions for AI (MEAI)**, **Semantic Kernel**, embeddings, RAG, function calling, and image analysis.
+### *Build Modern LLM Applications in .NET Using OpenAI, Ollama, Semantic Kernel, and .NET Aspire*
 
-This repository walks you step-by-step through building real-world AI features and integrating Large Language Models (LLMs) into production-ready .NET solutions.
+<img width="1371" height="489" alt="image" src="https://github.com/user-attachments/assets/cac480a5-e370-4530-a470-91376bba014a" />
 
 ---
 
-## 🚀 **What You Will Build & Learn**
+## 🎓 **Overview**
 
-### **💬 Chat & Text Intelligence**
+**GenAI-Demo** is the complete source code accompanying the Udemy course **“GenAI for .NET: Build LLM Apps with OpenAI and Ollama.”**
 
-Create intelligent chatbots, perform text classification, summarization, and sentiment analysis, and learn practical prompt engineering techniques.
+This project is a **hands-on, end-to-end guide** to building generative AI applications in .NET—from basic chatbot scenarios to advanced distributed microservices powered by **.NET Aspire**, **Semantic Kernel**, vector databases, and both **cloud-based** (OpenAI/GitHub Models) and **local** (Ollama) LLMs.
 
-### **🛠️ Function Calling (Tools)**
+The goal of this repository is to help .NET developers confidently build **AI-powered, production-ready software**.
 
-Teach your AI to execute real C# methods—allowing it to retrieve data, call external services, and perform real actions programmatically.
+---
 
-### **🔍 Vector Search & Embeddings**
+## 🚀 **What You Will Build**
 
-Understand how modern semantic search works. Convert text into vector embeddings and build semantic search features powered by vector databases.
+Throughout this project, you will build a wide range of real-world AI features and distributed services:
 
-### **📚 Retrieval-Augmented Generation (RAG)**
+### 💬 **Chat & Text Analysis**
 
-Build a complete RAG pipeline from scratch. Allow your AI to ground answers in your own documents for accurate, fact-based responses.
+* Intelligent chatbots
+* Prompt engineering
+* Text classification, summarization & sentiment analysis
 
-### **🖼️ Image Understanding**
+### 🛠️ **Function Calling (Tools)**
 
-Implement multimodal capabilities so the AI can analyze images, extract information, generate descriptions, and interpret visual content.
+Enable LLMs to execute your own C# methods, integrate with external APIs, and perform real actions.
 
-### **🏆 Final Project: Semantic Search**
+### 🔍 **Vector Search & Embeddings**
 
-Bring everything together by building a full semantic search engine for an platform using **.NET Aspire**, **Qdrant**, and models like **gpt-4o-mini**.
+Convert text into embeddings and perform semantic search—the foundation of recommendation systems and knowledge bases.
+
+### 📚 **Retrieval-Augmented Generation (RAG)**
+
+Build a complete RAG pipeline using Semantic Kernel and vector stores.
+Ground LLM answers in your **own documents** to eliminate hallucinations.
+
+### 🖼️ **Image Analysis**
+
+Use vision models to:
+
+* Identify objects
+* Extract information
+* Interpret images
+* Build AI-driven monitoring features
+
+### 🏆 **Final Project: AI-Powered E-Shop with Semantic Search**
+
+A fully distributed microservices system using:
+
+* **.NET Aspire** for orchestration
+* **Catalog** and **Basket** services
+* **PostgreSQL, Redis, RabbitMQ, Keycloak**
+* **Qdrant vector database**
+* **Semantic Kernel** for RAG + semantic search
+* **OpenAI & Ollama** for local/cloud LLMs
 
 ---
 
 ## 💻 **Technology Stack**
 
-This demo uses a modern and production-ready stack:
+This solution uses a modern, enterprise-ready AI stack:
 
-* **.NET 10**
-* **ASP.NET Core** (Minimal APIs, Blazor)
-* **.NET Aspire** for service orchestration
+* **.NET 9**
+* **ASP.NET Core** (Minimal APIs & Blazor)
+* **.NET Aspire** – Orchestration & distributed applications
 * **OpenAI / GitHub Models** (gpt-4o-mini, text-embedding-3-small)
-* **Ollama** (Llama 3.2, LLaVA, all-minilm locally)
-* **Qdrant** Vector Database
-* **Microsoft.Extensions.AI** Abstractions
+* **Ollama** (Llama 3.2, LLaVA, all-minilm)
+* **Qdrant** – Vector database for embeddings
 * **Semantic Kernel**
-* **Entity Framework Core + PostgreSQL**
+* **Microsoft.Extensions.AI** abstractions
+* **PostgreSQL**
+* **Redis**
+* **RabbitMQ**
+* **Keycloak**
 * **Docker**
 
 ---
 
 ## 📂 **Repository Structure**
 
-The repository is organized into sections that mirror the learning path. Each folder contains a standalone project:
+Each folder represents a progressive module in the learning path:
 
-| Folder                         | Description                                                            |
-| ------------------------------ | ---------------------------------------------------------------------- |
-| **01-TextCompletionSentiment** | Text generation, streaming, structured output, sentiment analysis      |
-| **02-ChatApp**                 | Context-aware chatbot with memory                                      |
-| **03-FunctionCalling**         | LLM executing C# functions                                             |
-| **04-VectorSearch**            | Embeddings, similarity search, vector databases                        |
-| **05-RAGApplication**          | Full Retrieval-Augmented Generation pipeline                           |
-| **06-ImageAnalysis**           | Vision models and multimodal AI                                        |
+| Module                         | Description                                                       |
+| ------------------------------ | ----------------------------------------------------------------- |
+| **01-TextCompletionSentiment** | Text generation, streaming, structured output, sentiment analysis |
+| **02-ChatApp**                 | Context-aware conversational chat applications                    |
+| **03-FunctionCalling**         | Execute C# functions from LLMs                                    |
+| **04-VectorSearch**            | Build embeddings → semantic search engine                         |
+| **05-RAGApplication**          | Complete RAG workflow with private documents                      |
+| **06-ImageAnalysis**           | Work with multimodal (vision) LLMs                                |
+| **07-FinalProject**            | Final microservices project with .NET Aspire                      |
 
 ---
 
@@ -73,30 +103,36 @@ The repository is organized into sections that mirror the learning path. Each fo
 
 ### **Prerequisites**
 
-Make sure you have:
+Please install:
 
 * **.NET 10 SDK**
-* **Docker Desktop** (required for Ollama & Qdrant)
-* **Visual Studio 2026** or **VS Code** (with C# Dev Kit)
+* **Docker Desktop** (required for Ollama, Qdrant, RabbitMQ, PostgreSQL)
+* **Visual Studio 2026** or **VS Code (C# Dev Kit)**
 
 ---
 
 ## ⚙️ **Configuration**
 
-These projects use `.NET user-secrets` for secure storage of API keys.
+This repository uses `.NET user-secrets` to store API keys securely.
 
-### **1. GitHub Models / OpenAI API Key**
+### **1. Configure OpenAI / GitHub Models**
 
-Navigate to any project folder (e.g., `01-TextCompletionSentiment`) and run:
+Inside any module folder:
 
 ```bash
 dotnet user-secrets init
 dotnet user-secrets set "GitHubModels:Token" "YOUR_GITHUB_PAT_HERE"
 ```
 
-### **2. For .NET Aspire Final Project**
+### **2. Configure Final eShop Project (Aspire)**
 
-Navigate to the **AppHost** directory and configure the OpenAI/GitHub Models connection:
+Navigate to:
+
+```
+07-FinalProject\Aspire\AppHost
+```
+
+Then:
 
 ```bash
 dotnet user-secrets init
@@ -105,3 +141,18 @@ dotnet user-secrets set "ConnectionStrings:openai" "Endpoint=https://models.infe
 
 ---
 
+## 🤝 **Contributing & Feedback**
+
+This repository is intended for educational use.
+If you discover issues, have suggestions, or want improvements:
+
+👉 Please open an issue on GitHub — your feedback helps improve the course and this project.
+
+---
+
+## 📜 **License**
+
+This project is licensed under the **MIT License**.
+See the `LICENSE` file for more details.
+
+---
