@@ -1,4 +1,17 @@
 <Solution>
+  <Folder Name="/FinalProject/" />
+  <Folder Name="/FinalProject/Aspire/">
+    <Project Path="FinalProject/Aspire/AppHost/AppHost.csproj" Id="730deefd-a1d3-43d7-8845-a3c077a87d54" />
+    <Project Path="FinalProject/Aspire/ServiceDefaults/ServiceDefaults.csproj" />
+  </Folder>
+  <Folder Name="/FinalProject/Frontend/">
+    <Project Path="FinalProject/Frontend/WebApp/WebApp.csproj" />
+  </Folder>
+  <Folder Name="/FinalProject/Services/">
+    <Project Path="FinalProject/Services/Basket/Basket.csproj" />
+    <Project Path="FinalProject/Services/Catalog/Catalog.csproj" />
+    <Project Path="FinalProject/Services/Ordering/Ordering.csproj" />
+  </Folder>
   <Folder Name="/LLMs/">
     <Project Path="FunctionCall/FunctionCall.csproj" />
     <Project Path="TextCompletion/TextCompletion.csproj" />
