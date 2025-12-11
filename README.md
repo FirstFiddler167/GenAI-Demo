@@ -10,8 +10,6 @@
 
 ## 🎓 **Overview**
 
-**GenAI-Demo** is the complete source code accompanying the Udemy course **“GenAI for .NET: Build LLM Apps with OpenAI and Ollama.”**
-
 This project is a **hands-on, end-to-end guide** to building generative AI applications in .NET—from basic chatbot scenarios to advanced distributed microservices powered by **.NET Aspire**, **Semantic Kernel**, vector databases, and both **cloud-based** (OpenAI/GitHub Models) and **local** (Ollama) LLMs.
 
 The goal of this repository is to help .NET developers confidently build **AI-powered, production-ready software**.
